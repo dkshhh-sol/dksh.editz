@@ -12,6 +12,12 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
+// TODO: After your first Vercel deploy, set this to your live URL
+// (e.g. "https://dksh-editz.vercel.app" or your custom domain — no trailing slash).
+// Link previews (WhatsApp, X, LinkedIn, Discord…) require an absolute image URL.
+const SITE_URL = "https://dksh-editz.vercel.app";
+const OG_IMAGE = `${SITE_URL}/og-image.png`;
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -84,11 +90,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "DKSH | Video Editor & Motion Designer" },
       { property: "og:description", content: "DKSH — freelance video editor and motion designer crafting high-retention edits, cinematic storytelling and motion graphics." },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/567e0fff-765a-43d5-9c44-464d8d992b68" },
+      { property: "og:image", content: OG_IMAGE },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "DKSH | Video Editor & Motion Designer" },
       { name: "twitter:description", content: "DKSH — freelance video editor and motion designer crafting high-retention edits, cinematic storytelling and motion graphics." },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/567e0fff-765a-43d5-9c44-464d8d992b68" },
+      { name: "twitter:image", content: OG_IMAGE },
     ],
     links: [
       {
