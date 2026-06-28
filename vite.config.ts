@@ -12,4 +12,7 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Build for Vercel instead of the Cloudflare default. Produces .vercel/output
+  // (Build Output API v3) that Vercel deploys directly.
+  nitro: { preset: "vercel" },
 });

@@ -10,6 +10,7 @@ dist/
 .tanstack/
 .nitro/
 .wrangler/
+.vercel/
 
 # Logs
 *.log
@@ -37,3 +38,6 @@ Thumbs.db
 # Misc
 *.local
 .cache/
+
+.vercel
+.env*

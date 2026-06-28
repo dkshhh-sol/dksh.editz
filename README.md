@@ -1,7 +1,7 @@
 DKSH — Video Editor & Motion Designer Portfolio
 A cinematic, motion-driven portfolio site for DKSH, a freelance video editor and motion designer. Built to showcase high-retention edits, cinematic color grading, and motion graphics — with every interaction designed to feel like a film, not a webpage.
 
-🔗 Live: add your deployed URL here
+🔗 Live: https://dksh-editz.vercel.app
 
 ✨ Overview
 This is a single-page, scroll-driven portfolio engineered for impact. From the animated loader to the boomerang video hero and the custom cursor, the site is built to hold attention the same way a good edit does — every frame placed with intent.
